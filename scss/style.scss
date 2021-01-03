@@ -5,6 +5,7 @@ body {
 
 .container {
   height: 100vh;
+  min-height: 1062px;
   display: flex;
   justify-content: center;
   padding: 50px;
@@ -22,7 +23,6 @@ body {
     "__A __K __Q __J ___10 ___9 ___8 ___7 ___6"
     "___A ___K ___Q ___J ____10 ____9 ____8 ____7 ____6";
 }
-
 
 .card_container {
   display: inline-block;

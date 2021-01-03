@@ -5,6 +5,7 @@ body {
 
 .container {
   height: 100vh;
+  min-height: 1062px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
