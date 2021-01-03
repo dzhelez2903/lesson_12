@@ -19,6 +19,8 @@ body {
 .grid-container {
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-grid-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
       grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
   -ms-grid-rows: auto auto auto auto;
