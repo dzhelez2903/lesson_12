@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+  background: url(../img/game_table.jpg);
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
+      grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  gap: 10px 10px;
+      grid-template-areas: "A K Q J _10 _9 _8 _7 _6" "_A _K _Q _J __10 __9 __8 __7 __6" "__A __K __Q __J ___10 ___9 ___8 ___7 ___6" "___A ___K ___Q ___J ____10 ____9 ____8 ____7 ____6";
+}
+
+.card_container {
+  display: inline-block;
+  width: 150px;
+  height: 218px;
+  position: relative;
+  -webkit-perspective: 600;
+          perspective: 600;
+  cursor: pointer;
+}
+
+.card_container .card {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.card_container .card .back_side {
+  width: 150px;
+  height: 218px;
+  background: url(../img/back_card.png) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card_container .card .face_side {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card_container .card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */
