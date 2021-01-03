@@ -25,7 +25,7 @@ body {
       grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
-  gap: 10px 10px;
+  gap: 20px 20px;
       grid-template-areas: "A K Q J _10 _9 _8 _7 _6" "_A _K _Q _J __10 __9 __8 __7 __6" "__A __K __Q __J ___10 ___9 ___8 ___7 ___6" "___A ___K ___Q ___J ____10 ____9 ____8 ____7 ____6";
 }
 
